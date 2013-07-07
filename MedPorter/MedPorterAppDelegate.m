@@ -35,7 +35,7 @@
     _login = [[LoginViewController alloc] initWithNibName:nil bundle:nil];
     _login.delegate = self;
     
-    [Catalyze setApplicationId:kCatalyzeAppKey];
+    [Catalyze setApplicationKey:kCatalyzeAppKey];
     
     if ([[CatalyzePerson currentPerson] isAuthenticated]) {
         _profile = [[ProfileViewController alloc] initWithNibName:nil bundle:nil];

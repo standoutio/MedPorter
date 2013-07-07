@@ -95,7 +95,7 @@
 
 - (IBAction)loginUser:(id)sender {
     if ([self validateInput]) {
-        [CatalyzePerson logInWithUsernameInBackground:_txtUsername.text password:_txtPassword.text block:^(CatalyzePerson *user, NSError *error) {
+        [CatalyzePerson logInWithUsernameInBackground:_txtUsername.text password:_txtPassword.text block:^(CatalyzeObject *object, NSError *error) {
             if (!error) {
                 NSLog(@"successful login");
                 [_delegate userDidLogin];
