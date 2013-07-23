@@ -11,6 +11,7 @@
 #import "NSString+FontAwesome.h"
 #import "Catalyze.h"
 #import "SIAlertView.h"
+#import "NavigationViewController.h"
 
 @interface LoginViewController ()
 
@@ -32,6 +33,9 @@
     
     [_txtUsername setFont:[UIFont fontWithName:@"Raleway-Light" size:14.0f]];
     [_txtPassword setFont:[UIFont fontWithName:@"Raleway-Light" size:14.0f]];
+    
+    self.navigationController.navigationBar.userInteractionEnabled = NO;
+    [(NavigationViewController *)self.navigationController hideArrowLabel];
 }
 
 - (void)didReceiveMemoryWarning {

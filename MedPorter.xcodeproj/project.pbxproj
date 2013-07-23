@@ -20,13 +20,9 @@
 		D763CBC2177A061A00853C7A /* EmergencyContactUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D763CBC1177A061A00853C7A /* EmergencyContactUITableViewCell.m */; };
 		D763CBC4177A062600853C7A /* EmergencyContactUITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D763CBC3177A062600853C7A /* EmergencyContactUITableViewCell.xib */; };
 		D763CBC8177A348200853C7A /* MedicalProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D763CBC6177A348100853C7A /* MedicalProfileViewController.m */; };
-		D763CBC9177A348200853C7A /* MedicalProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D763CBC7177A348200853C7A /* MedicalProfileViewController.xib */; };
 		D763CBCD177A348E00853C7A /* MedsProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D763CBCB177A348E00853C7A /* MedsProfileViewController.m */; };
-		D763CBCE177A348E00853C7A /* MedsProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D763CBCC177A348E00853C7A /* MedsProfileViewController.xib */; };
 		D763CBD2177A349900853C7A /* SocialProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D763CBD0177A349800853C7A /* SocialProfileViewController.m */; };
-		D763CBD3177A349900853C7A /* SocialProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D763CBD1177A349800853C7A /* SocialProfileViewController.xib */; };
 		D763CBD7177A34A400853C7A /* WellnessProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D763CBD5177A34A300853C7A /* WellnessProfileViewController.m */; };
-		D763CBD8177A34A400853C7A /* WellnessProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D763CBD6177A34A400853C7A /* WellnessProfileViewController.xib */; };
 		D763CBDB177A38D600853C7A /* MedPorterProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D763CBDA177A38D500853C7A /* MedPorterProfileViewController.m */; };
 		D763CBDD177A3AEC00853C7A /* MedPorterProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D763CBDC177A3AEB00853C7A /* MedPorterProfileViewController.xib */; };
 		D7799F39178A272A00701DF5 /* Catalyze.m in Sources */ = {isa = PBXBuildFile; fileRef = D7799F0D178A272A00701DF5 /* Catalyze.m */; };
@@ -46,9 +42,6 @@
 		D7799F47178A272A00701DF5 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7799F2D178A272A00701DF5 /* AFURLConnectionOperation.m */; };
 		D7799F48178A272A00701DF5 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7799F2F178A272A00701DF5 /* AFXMLRequestOperation.m */; };
 		D7799F49178A272A00701DF5 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D7799F31178A272A00701DF5 /* UIImageView+AFNetworking.m */; };
-		D7799F4A178A272A00701DF5 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7799F34178A272A00701DF5 /* FAImageView.m */; };
-		D7799F4B178A272A00701DF5 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = D7799F36178A272A00701DF5 /* NSString+FontAwesome.m */; };
-		D7799F4C178A272A00701DF5 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = D7799F38178A272A00701DF5 /* UIFont+FontAwesome.m */; };
 		D7A585B21779DB7A002A37B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A585B11779DB7A002A37B9 /* UIKit.framework */; };
 		D7A585B41779DB7A002A37B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A585B31779DB7A002A37B9 /* Foundation.framework */; };
 		D7A585B61779DB7A002A37B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A585B51779DB7A002A37B9 /* CoreGraphics.framework */; };
@@ -61,8 +54,6 @@
 		D7A585CB1779DB7A002A37B9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A585CA1779DB7A002A37B9 /* LoginViewController.m */; };
 		D7A585CE1779DB7A002A37B9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A585CC1779DB7A002A37B9 /* LoginViewController.xib */; };
 		D7A586111779DDEF002A37B9 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A5860F1779DDEF002A37B9 /* ProfileViewController.m */; };
-		D7A586121779DDEF002A37B9 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A586101779DDEF002A37B9 /* ProfileViewController.xib */; };
-		D7A586891779DEB4002A37B9 /* ClearifyNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A586151779DEB4002A37B9 /* ClearifyNavigationBar.m */; };
 		D7A5868A1779DEB4002A37B9 /* UnderlineUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A586171779DEB4002A37B9 /* UnderlineUITextField.m */; };
 		D7A5868B1779DEB4002A37B9 /* JALoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A586191779DEB4002A37B9 /* JALoadingView.m */; };
 		D7A5868C1779DEB4002A37B9 /* RadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A5861B1779DEB4002A37B9 /* RadioButton.m */; };
@@ -127,6 +118,20 @@
 		D7A586E41779E788002A37B9 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7A586E31779E788002A37B9 /* fontawesome-webfont.ttf */; };
 		D7A586E91779F348002A37B9 /* SIAlertView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D7A586E61779F348002A37B9 /* SIAlertView.bundle */; };
 		D7A586EA1779F348002A37B9 /* SIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A586E81779F348002A37B9 /* SIAlertView.m */; };
+		D7EB3FE9178B029C00A02981 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EB3FE4178B029C00A02981 /* FAImageView.m */; };
+		D7EB3FEA178B029C00A02981 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EB3FE6178B029C00A02981 /* NSString+FontAwesome.m */; };
+		D7EB3FEB178B029C00A02981 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EB3FE8178B029C00A02981 /* UIFont+FontAwesome.m */; };
+		D7EB3FF5178B04F000A02981 /* REMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EB3FEE178B04F000A02981 /* REMenu.m */; };
+		D7EB3FF6178B04F000A02981 /* REMenuContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EB3FF0178B04F000A02981 /* REMenuContainerView.m */; };
+		D7EB3FF7178B04F000A02981 /* REMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EB3FF2178B04F000A02981 /* REMenuItem.m */; };
+		D7EB3FF8178B04F000A02981 /* REMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EB3FF4178B04F000A02981 /* REMenuItemView.m */; };
+		D7EB3FFB178B052E00A02981 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EB3FFA178B052E00A02981 /* NavigationViewController.m */; };
+		D7EB3FFE178B0CAE00A02981 /* UIView+FindFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EB3FFD178B0CAE00A02981 /* UIView+FindFirstResponder.m */; };
+		D7EB4005178B0E7100A02981 /* green-check.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D7EB4000178B0E7100A02981 /* green-check.tiff */; };
+		D7EB4006178B0E7100A02981 /* no.png in Resources */ = {isa = PBXBuildFile; fileRef = D7EB4001178B0E7100A02981 /* no.png */; };
+		D7EB4007178B0E7100A02981 /* no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7EB4002178B0E7100A02981 /* no@2x.png */; };
+		D7EB4008178B0E7100A02981 /* yes.png in Resources */ = {isa = PBXBuildFile; fileRef = D7EB4003178B0E7100A02981 /* yes.png */; };
+		D7EB4009178B0E7100A02981 /* yes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7EB4004178B0E7100A02981 /* yes@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,16 +155,12 @@
 		D763CBC3177A062600853C7A /* EmergencyContactUITableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmergencyContactUITableViewCell.xib; sourceTree = "<group>"; };
 		D763CBC5177A348100853C7A /* MedicalProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalProfileViewController.h; sourceTree = "<group>"; };
 		D763CBC6177A348100853C7A /* MedicalProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalProfileViewController.m; sourceTree = "<group>"; };
-		D763CBC7177A348200853C7A /* MedicalProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedicalProfileViewController.xib; sourceTree = "<group>"; };
 		D763CBCA177A348D00853C7A /* MedsProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedsProfileViewController.h; sourceTree = "<group>"; };
 		D763CBCB177A348E00853C7A /* MedsProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedsProfileViewController.m; sourceTree = "<group>"; };
-		D763CBCC177A348E00853C7A /* MedsProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedsProfileViewController.xib; sourceTree = "<group>"; };
 		D763CBCF177A349800853C7A /* SocialProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialProfileViewController.h; sourceTree = "<group>"; };
 		D763CBD0177A349800853C7A /* SocialProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialProfileViewController.m; sourceTree = "<group>"; };
-		D763CBD1177A349800853C7A /* SocialProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialProfileViewController.xib; sourceTree = "<group>"; };
 		D763CBD4177A34A300853C7A /* WellnessProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellnessProfileViewController.h; sourceTree = "<group>"; };
 		D763CBD5177A34A300853C7A /* WellnessProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellnessProfileViewController.m; sourceTree = "<group>"; };
-		D763CBD6177A34A400853C7A /* WellnessProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WellnessProfileViewController.xib; sourceTree = "<group>"; };
 		D763CBD9177A38D400853C7A /* MedPorterProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedPorterProfileViewController.h; sourceTree = "<group>"; };
 		D763CBDA177A38D500853C7A /* MedPorterProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedPorterProfileViewController.m; sourceTree = "<group>"; };
 		D763CBDC177A3AEB00853C7A /* MedPorterProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedPorterProfileViewController.xib; sourceTree = "<group>"; };
@@ -200,12 +201,6 @@
 		D7799F2F178A272A00701DF5 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		D7799F30178A272A00701DF5 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		D7799F31178A272A00701DF5 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		D7799F33178A272A00701DF5 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
-		D7799F34178A272A00701DF5 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
-		D7799F35178A272A00701DF5 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
-		D7799F36178A272A00701DF5 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
-		D7799F37178A272A00701DF5 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
-		D7799F38178A272A00701DF5 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
 		D7A585AE1779DB7A002A37B9 /* MedPorter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedPorter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A585B11779DB7A002A37B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D7A585B31779DB7A002A37B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -224,9 +219,6 @@
 		D7A585CD1779DB7A002A37B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LoginViewController.xib; sourceTree = "<group>"; };
 		D7A5860E1779DDEF002A37B9 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		D7A5860F1779DDEF002A37B9 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		D7A586101779DDEF002A37B9 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
-		D7A586141779DEB4002A37B9 /* ClearifyNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearifyNavigationBar.h; sourceTree = "<group>"; };
-		D7A586151779DEB4002A37B9 /* ClearifyNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearifyNavigationBar.m; sourceTree = "<group>"; };
 		D7A586161779DEB4002A37B9 /* UnderlineUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderlineUITextField.h; sourceTree = "<group>"; };
 		D7A586171779DEB4002A37B9 /* UnderlineUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderlineUITextField.m; sourceTree = "<group>"; };
 		D7A586181779DEB4002A37B9 /* JALoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALoadingView.h; sourceTree = "<group>"; };
@@ -324,6 +316,29 @@
 		D7A586E61779F348002A37B9 /* SIAlertView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SIAlertView.bundle; sourceTree = "<group>"; };
 		D7A586E71779F348002A37B9 /* SIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIAlertView.h; sourceTree = "<group>"; };
 		D7A586E81779F348002A37B9 /* SIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIAlertView.m; sourceTree = "<group>"; };
+		D7EB3FE3178B029C00A02981 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
+		D7EB3FE4178B029C00A02981 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
+		D7EB3FE5178B029C00A02981 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		D7EB3FE6178B029C00A02981 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		D7EB3FE7178B029C00A02981 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		D7EB3FE8178B029C00A02981 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		D7EB3FED178B04F000A02981 /* REMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenu.h; sourceTree = "<group>"; };
+		D7EB3FEE178B04F000A02981 /* REMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenu.m; sourceTree = "<group>"; };
+		D7EB3FEF178B04F000A02981 /* REMenuContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuContainerView.h; sourceTree = "<group>"; };
+		D7EB3FF0178B04F000A02981 /* REMenuContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenuContainerView.m; sourceTree = "<group>"; };
+		D7EB3FF1178B04F000A02981 /* REMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuItem.h; sourceTree = "<group>"; };
+		D7EB3FF2178B04F000A02981 /* REMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenuItem.m; sourceTree = "<group>"; };
+		D7EB3FF3178B04F000A02981 /* REMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMenuItemView.h; sourceTree = "<group>"; };
+		D7EB3FF4178B04F000A02981 /* REMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMenuItemView.m; sourceTree = "<group>"; };
+		D7EB3FF9178B052E00A02981 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		D7EB3FFA178B052E00A02981 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		D7EB3FFC178B0CAE00A02981 /* UIView+FindFirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FindFirstResponder.h"; sourceTree = "<group>"; };
+		D7EB3FFD178B0CAE00A02981 /* UIView+FindFirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FindFirstResponder.m"; sourceTree = "<group>"; };
+		D7EB4000178B0E7100A02981 /* green-check.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "green-check.tiff"; sourceTree = "<group>"; };
+		D7EB4001178B0E7100A02981 /* no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no.png; sourceTree = "<group>"; };
+		D7EB4002178B0E7100A02981 /* no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no@2x.png"; sourceTree = "<group>"; };
+		D7EB4003178B0E7100A02981 /* yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yes.png; sourceTree = "<group>"; };
+		D7EB4004178B0E7100A02981 /* yes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yes@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,7 +385,6 @@
 			isa = PBXGroup;
 			children = (
 				D7799F1C178A272A00701DF5 /* AFNetworking */,
-				D7799F32178A272A00701DF5 /* ios-fontawesome */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -403,22 +417,10 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
-		D7799F32178A272A00701DF5 /* ios-fontawesome */ = {
-			isa = PBXGroup;
-			children = (
-				D7799F33178A272A00701DF5 /* FAImageView.h */,
-				D7799F34178A272A00701DF5 /* FAImageView.m */,
-				D7799F35178A272A00701DF5 /* NSString+FontAwesome.h */,
-				D7799F36178A272A00701DF5 /* NSString+FontAwesome.m */,
-				D7799F37178A272A00701DF5 /* UIFont+FontAwesome.h */,
-				D7799F38178A272A00701DF5 /* UIFont+FontAwesome.m */,
-			);
-			path = "ios-fontawesome";
-			sourceTree = "<group>";
-		};
 		D7A585A51779DB7A002A37B9 = {
 			isa = PBXGroup;
 			children = (
+				D7EB3FFF178B0E7100A02981 /* Media */,
 				D7A586131779DEB4002A37B9 /* Bases */,
 				D7A586261779DEB4002A37B9 /* Fonts */,
 				D7A586311779DEB4002A37B9 /* Helpers */,
@@ -454,6 +456,8 @@
 			children = (
 				D7A585C01779DB7A002A37B9 /* MedPorterAppDelegate.h */,
 				D7A585C11779DB7A002A37B9 /* MedPorterAppDelegate.m */,
+				D7EB3FF9178B052E00A02981 /* NavigationViewController.h */,
+				D7EB3FFA178B052E00A02981 /* NavigationViewController.m */,
 				D7A585C91779DB7A002A37B9 /* LoginViewController.h */,
 				D7A585CA1779DB7A002A37B9 /* LoginViewController.m */,
 				D7A585CC1779DB7A002A37B9 /* LoginViewController.xib */,
@@ -465,19 +469,14 @@
 				D763CBDC177A3AEB00853C7A /* MedPorterProfileViewController.xib */,
 				D7A5860E1779DDEF002A37B9 /* ProfileViewController.h */,
 				D7A5860F1779DDEF002A37B9 /* ProfileViewController.m */,
-				D7A586101779DDEF002A37B9 /* ProfileViewController.xib */,
 				D763CBC5177A348100853C7A /* MedicalProfileViewController.h */,
 				D763CBC6177A348100853C7A /* MedicalProfileViewController.m */,
-				D763CBC7177A348200853C7A /* MedicalProfileViewController.xib */,
 				D763CBCA177A348D00853C7A /* MedsProfileViewController.h */,
 				D763CBCB177A348E00853C7A /* MedsProfileViewController.m */,
-				D763CBCC177A348E00853C7A /* MedsProfileViewController.xib */,
 				D763CBCF177A349800853C7A /* SocialProfileViewController.h */,
 				D763CBD0177A349800853C7A /* SocialProfileViewController.m */,
-				D763CBD1177A349800853C7A /* SocialProfileViewController.xib */,
 				D763CBD4177A34A300853C7A /* WellnessProfileViewController.h */,
 				D763CBD5177A34A300853C7A /* WellnessProfileViewController.m */,
-				D763CBD6177A34A400853C7A /* WellnessProfileViewController.xib */,
 				D7A585B81779DB7A002A37B9 /* Supporting Files */,
 			);
 			path = MedPorter;
@@ -500,6 +499,8 @@
 		D7A585D41779DCF7002A37B9 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D7EB3FEC178B04F000A02981 /* REMenu */,
+				D7EB3FE2178B029C00A02981 /* ios-fontawesome */,
 				D7799F0A178A272A00701DF5 /* catalyze.io-iOS */,
 				D7A586E51779F348002A37B9 /* SIAlertView */,
 			);
@@ -510,8 +511,8 @@
 		D7A586131779DEB4002A37B9 /* Bases */ = {
 			isa = PBXGroup;
 			children = (
-				D7A586141779DEB4002A37B9 /* ClearifyNavigationBar.h */,
-				D7A586151779DEB4002A37B9 /* ClearifyNavigationBar.m */,
+				D7EB3FFC178B0CAE00A02981 /* UIView+FindFirstResponder.h */,
+				D7EB3FFD178B0CAE00A02981 /* UIView+FindFirstResponder.m */,
 				D7A586161779DEB4002A37B9 /* UnderlineUITextField.h */,
 				D7A586171779DEB4002A37B9 /* UnderlineUITextField.m */,
 				D7A586DD1779E694002A37B9 /* DashedBorderUITextField.h */,
@@ -675,6 +676,47 @@
 			path = SIAlertView;
 			sourceTree = "<group>";
 		};
+		D7EB3FE2178B029C00A02981 /* ios-fontawesome */ = {
+			isa = PBXGroup;
+			children = (
+				D7EB3FE3178B029C00A02981 /* FAImageView.h */,
+				D7EB3FE4178B029C00A02981 /* FAImageView.m */,
+				D7EB3FE5178B029C00A02981 /* NSString+FontAwesome.h */,
+				D7EB3FE6178B029C00A02981 /* NSString+FontAwesome.m */,
+				D7EB3FE7178B029C00A02981 /* UIFont+FontAwesome.h */,
+				D7EB3FE8178B029C00A02981 /* UIFont+FontAwesome.m */,
+			);
+			path = "ios-fontawesome";
+			sourceTree = "<group>";
+		};
+		D7EB3FEC178B04F000A02981 /* REMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D7EB3FED178B04F000A02981 /* REMenu.h */,
+				D7EB3FEE178B04F000A02981 /* REMenu.m */,
+				D7EB3FEF178B04F000A02981 /* REMenuContainerView.h */,
+				D7EB3FF0178B04F000A02981 /* REMenuContainerView.m */,
+				D7EB3FF1178B04F000A02981 /* REMenuItem.h */,
+				D7EB3FF2178B04F000A02981 /* REMenuItem.m */,
+				D7EB3FF3178B04F000A02981 /* REMenuItemView.h */,
+				D7EB3FF4178B04F000A02981 /* REMenuItemView.m */,
+			);
+			path = REMenu;
+			sourceTree = "<group>";
+		};
+		D7EB3FFF178B0E7100A02981 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				D7EB4000178B0E7100A02981 /* green-check.tiff */,
+				D7EB4001178B0E7100A02981 /* no.png */,
+				D7EB4002178B0E7100A02981 /* no@2x.png */,
+				D7EB4003178B0E7100A02981 /* yes.png */,
+				D7EB4004178B0E7100A02981 /* yes@2x.png */,
+			);
+			name = Media;
+			path = MedPorter/Media;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -731,7 +773,6 @@
 				D7A585C61779DB7A002A37B9 /* Default@2x.png in Resources */,
 				D7A585C81779DB7A002A37B9 /* Default-568h@2x.png in Resources */,
 				D7A585CE1779DB7A002A37B9 /* LoginViewController.xib in Resources */,
-				D7A586121779DDEF002A37B9 /* ProfileViewController.xib in Resources */,
 				D7A586921779DEB4002A37B9 /* Raleway-Bold.ttf in Resources */,
 				D7A586931779DEB4002A37B9 /* Raleway-ExtraBold.ttf in Resources */,
 				D7A586941779DEB4002A37B9 /* Raleway-ExtraLight.ttf in Resources */,
@@ -770,11 +811,12 @@
 				D763CBBA177A055100853C7A /* EmailPhoneUITableViewCell.xib in Resources */,
 				D763CBBF177A05C000853C7A /* SocialUITableViewCell.xib in Resources */,
 				D763CBC4177A062600853C7A /* EmergencyContactUITableViewCell.xib in Resources */,
-				D763CBC9177A348200853C7A /* MedicalProfileViewController.xib in Resources */,
-				D763CBCE177A348E00853C7A /* MedsProfileViewController.xib in Resources */,
-				D763CBD3177A349900853C7A /* SocialProfileViewController.xib in Resources */,
-				D763CBD8177A34A400853C7A /* WellnessProfileViewController.xib in Resources */,
 				D763CBDD177A3AEC00853C7A /* MedPorterProfileViewController.xib in Resources */,
+				D7EB4005178B0E7100A02981 /* green-check.tiff in Resources */,
+				D7EB4006178B0E7100A02981 /* no.png in Resources */,
+				D7EB4007178B0E7100A02981 /* no@2x.png in Resources */,
+				D7EB4008178B0E7100A02981 /* yes.png in Resources */,
+				D7EB4009178B0E7100A02981 /* yes@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,7 +831,6 @@
 				D7A585C21779DB7A002A37B9 /* MedPorterAppDelegate.m in Sources */,
 				D7A585CB1779DB7A002A37B9 /* LoginViewController.m in Sources */,
 				D7A586111779DDEF002A37B9 /* ProfileViewController.m in Sources */,
-				D7A586891779DEB4002A37B9 /* ClearifyNavigationBar.m in Sources */,
 				D7A5868A1779DEB4002A37B9 /* UnderlineUITextField.m in Sources */,
 				D7A5868B1779DEB4002A37B9 /* JALoadingView.m in Sources */,
 				D7A5868C1779DEB4002A37B9 /* RadioButton.m in Sources */,
@@ -849,9 +890,15 @@
 				D7799F47178A272A00701DF5 /* AFURLConnectionOperation.m in Sources */,
 				D7799F48178A272A00701DF5 /* AFXMLRequestOperation.m in Sources */,
 				D7799F49178A272A00701DF5 /* UIImageView+AFNetworking.m in Sources */,
-				D7799F4A178A272A00701DF5 /* FAImageView.m in Sources */,
-				D7799F4B178A272A00701DF5 /* NSString+FontAwesome.m in Sources */,
-				D7799F4C178A272A00701DF5 /* UIFont+FontAwesome.m in Sources */,
+				D7EB3FE9178B029C00A02981 /* FAImageView.m in Sources */,
+				D7EB3FEA178B029C00A02981 /* NSString+FontAwesome.m in Sources */,
+				D7EB3FEB178B029C00A02981 /* UIFont+FontAwesome.m in Sources */,
+				D7EB3FF5178B04F000A02981 /* REMenu.m in Sources */,
+				D7EB3FF6178B04F000A02981 /* REMenuContainerView.m in Sources */,
+				D7EB3FF7178B04F000A02981 /* REMenuItem.m in Sources */,
+				D7EB3FF8178B04F000A02981 /* REMenuItemView.m in Sources */,
+				D7EB3FFB178B052E00A02981 /* NavigationViewController.m in Sources */,
+				D7EB3FFE178B0CAE00A02981 /* UIView+FindFirstResponder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

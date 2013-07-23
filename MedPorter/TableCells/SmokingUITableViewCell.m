@@ -94,11 +94,13 @@
 - (IBAction)clickedSmokeSwitch:(id)sender {
     [sender toggleOn];
     [[NSUserDefaults standardUserDefaults] setBool:_switchSmoke.isOn forKey:kBOOLSmokedDuringPregnancy];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)clickedSecondHandSwitch:(id)sender {
     [sender toggleOn];
     [[NSUserDefaults standardUserDefaults] setBool:_switchSecondHand.isOn forKey:kBOOLSecondHandSmokeDuringPregnancy];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)sliderValueChanged:(id)sender {
@@ -107,6 +109,7 @@
     } else if (sender == _sliderSecondHand) {
         [[NSUserDefaults standardUserDefaults] setFloat:(int)_sliderSecondHand.value forKey:kSecondHandSmokeDuringPregnancyTrimester];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (float)expandedHeight {
@@ -139,6 +142,7 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     [[NSUserDefaults standardUserDefaults] setValue:_txtPacksPerDay.text forKey:kPacksPerDay];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 

@@ -29,6 +29,7 @@
     
     [self.btnMeds setUserInteractionEnabled:NO];
     [self.btnMeds setBackgroundColor:[UIColor colorWithRed:52.0/255.0 green:73.0/255.0 blue:94.0/255.0 alpha:1.0f]];
+    [self.btnMeds setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     _expandedIndex = -1;
     

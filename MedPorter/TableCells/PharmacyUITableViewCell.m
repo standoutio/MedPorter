@@ -104,6 +104,7 @@
     } else if (btn == _btnMale) {
         [[NSUserDefaults standardUserDefaults] setBool:_btnFemale.isSelected forKey:kBOOLFemale];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)enableToggleButtons:(BOOL)enabled {

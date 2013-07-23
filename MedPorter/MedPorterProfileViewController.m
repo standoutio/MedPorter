@@ -11,8 +11,13 @@
 #import "UIFont+FontAwesome.h"
 #import "NSString+FontAwesome.h"
 #import "SIAlertView.h"
+#import "Constants.h"
+#import "UIView+FindFirstResponder.h"
+#import "NavigationViewController.h"
 
 @interface MedPorterProfileViewController ()
+
+@property BOOL keyboardShowing;
 
 @end
 
@@ -70,6 +75,29 @@
     [_btnEditName setTitle:[NSString fontAwesomeIconStringForIconIdentifier:@"icon-edit"] forState:UIControlStateNormal];
     
     [_txtName setFont:[UIFont fontWithName:@"Raleway" size:18.0f]];
+    [_txtName setText:[NSString stringWithFormat:@"%@ %@",[[NSUserDefaults standardUserDefaults] valueForKey:kFirstName],[[NSUserDefaults standardUserDefaults] valueForKey:kLastName]]];
+    
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:kFirstName] != nil && [[NSUserDefaults standardUserDefaults] valueForKey:kLastName] != nil) {
+        self.navigationItem.title = [NSString stringWithFormat:@"%@ %@",[[NSUserDefaults standardUserDefaults] valueForKey:kFirstName],[[NSUserDefaults standardUserDefaults] valueForKey:kLastName]];
+    }
+    self.navigationItem.hidesBackButton = YES;
+    
+    self.navigationController.navigationBar.userInteractionEnabled = YES;
+    
+    [(NavigationViewController *)self.navigationController showArrowLabel];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_btnMenu];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_btnShare];
+    
+    _keyboardShowing = NO;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillBeShown:)
+                                                 name:UIKeyboardWillShowNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillBeHidden:)
+                                                 name:UIKeyboardDidHideNotification object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -99,14 +127,18 @@
 }
 
 - (IBAction)showMenu:(id)sender {
-    NSLog(@"showing menu");
+    [(NavigationViewController *)self.navigationController toggleMenu];
 }
 
 - (IBAction)share:(id)sender {
-    SIAlertView *siav = [[SIAlertView alloc] initWithTitle:@"Share" andMessage:@"You must complete all sections in order to share your profile"];
-    [siav addButtonWithTitle:@"OK" type:SIAlertViewButtonTypeDestructive handler:nil];
-    [siav setTransitionStyle:SIAlertViewTransitionStyleDropDown];
-    [siav show];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:kBOOLAllSectionsComplete]) {
+        NSLog(@"you are able to share...");
+    } else {
+        SIAlertView *siav = [[SIAlertView alloc] initWithTitle:@"Share" andMessage:@"You must complete all sections in order to share your profile"];
+        [siav addButtonWithTitle:@"OK" type:SIAlertViewButtonTypeDestructive handler:nil];
+        [siav setTransitionStyle:SIAlertViewTransitionStyleDropDown];
+        [siav show];
+    }
 }
 
 - (IBAction)editName:(id)sender {
@@ -120,6 +152,31 @@
     [textField resignFirstResponder];
     [_txtName setUserInteractionEnabled:NO];
     return YES;
+}
+
+- (void)keyboardWillBeShown:(NSNotification*)aNotification {
+    if (!_keyboardShowing) {
+        _keyboardShowing = YES;
+        CGSize keyboardSize = [[[aNotification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+        [UIView animateWithDuration:0.2 animations:^{
+            CGRect mainFrame = _tbl.frame;
+            mainFrame.origin.y = 0;
+            mainFrame.size.height = self.view.frame.size.height - keyboardSize.height;
+            [_tbl setFrame:mainFrame];
+        }];
+    }
+}
+
+- (void)keyboardWillBeHidden:(NSNotification*)aNotification {
+    if ([self.view findFirstResponder] == nil) {
+        _keyboardShowing = NO;
+        [UIView animateWithDuration:0.2 animations:^{
+            CGRect mainFrame = _tbl.frame;
+            mainFrame.origin.y = self.view.frame.size.height - 330;
+            mainFrame.size.height = 330;
+            [_tbl setFrame:mainFrame];
+        }];
+    }
 }
 
 @end

@@ -111,6 +111,7 @@
     [[NSUserDefaults standardUserDefaults] setValue:_txtFirstName.text forKey:kFirstName];
     [[NSUserDefaults standardUserDefaults] setValue:_txtMI.text forKey:kMiddleInitial];
     [[NSUserDefaults standardUserDefaults] setValue:_txtLastName.text forKey:kLastName];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     [self checkForFinish];
     return YES;
 }

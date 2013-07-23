@@ -31,6 +31,7 @@
 - (IBAction)clickedSwitch:(id)sender {
     [sender toggleOn];
     [[NSUserDefaults standardUserDefaults] setBool:_switchPregnancy.isOn forKey:kBOOLAddressDuringPregnancy];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)updateCellWithTitle:(NSString *)title {
@@ -133,6 +134,7 @@
     [[NSUserDefaults standardUserDefaults] setValue:_txtCity.text forKey:kCity];
     [[NSUserDefaults standardUserDefaults] setValue:_txtState.text forKey:kState];
     [[NSUserDefaults standardUserDefaults] setValue:_txtZip.text forKey:kZip];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 

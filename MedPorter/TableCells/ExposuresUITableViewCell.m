@@ -136,6 +136,7 @@
     [[NSUserDefaults standardUserDefaults] setValue:_txtFatherMonth.text forKey:kFatherMonth];
     [[NSUserDefaults standardUserDefaults] setValue:_txtFatherDay.text forKey:kFatherDay];
     [[NSUserDefaults standardUserDefaults] setValue:_txtFatherYear.text forKey:kFatherYear];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 

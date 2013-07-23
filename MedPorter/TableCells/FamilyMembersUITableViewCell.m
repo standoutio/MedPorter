@@ -79,7 +79,7 @@
     [_subcells removeAllObjects];
     
     int numSubCells = [[NSUserDefaults standardUserDefaults] integerForKey:kNumberHemangiomas];
-    UIView *lastView = _txtNumber;
+    //UIView *lastView = _txtNumber;
     for (int i=0;i<numSubCells;i++) {
         /*NumberLocationSubCell *sub = [[NumberLocationSubCell alloc] init];
         [_subcells addObject:sub];
@@ -126,6 +126,7 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     [[NSUserDefaults standardUserDefaults] setValue:_txtNumber.text forKey:kNumberHemangiomas];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     [self addSubCells];
     return YES;
 }

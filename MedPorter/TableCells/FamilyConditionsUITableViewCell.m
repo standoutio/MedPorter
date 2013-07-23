@@ -89,6 +89,7 @@
 - (IBAction)clickedSwitch:(id)sender {
     [sender toggleOn];
     [[NSUserDefaults standardUserDefaults] setBool:_switchOralSteroids.isOn forKey:kBOOLOralSteroids];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (float)expandedHeight {
@@ -100,6 +101,7 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     [[NSUserDefaults standardUserDefaults] setValue:_txtAge.text forKey:kOralSteroidsStarted];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 

@@ -108,11 +108,13 @@
     } else if (sender == _sliderVitamins) {
         [[NSUserDefaults standardUserDefaults] setFloat:(int)_sliderVitamins.value forKey:kPreNatalVitaminsTrimester];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)clickedPrescriptionSwitch:(id)sender {
     [sender toggleOn];
     [[NSUserDefaults standardUserDefaults] setBool:_switchPrescription.isOn forKey:kBOOLPrescriptionMedications];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (float)expandedHeight {
@@ -159,17 +161,20 @@
     [[NSUserDefaults standardUserDefaults] setValue:_txtPrescription.text forKey:kPrescriptionMedications];
     [[NSUserDefaults standardUserDefaults] setValue:_txtNonPrescription.text forKey:kNonPrescriptionMedications];
     [[NSUserDefaults standardUserDefaults] setValue:_txtVitamins.text forKey:kPreNatalVitamins];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 
 - (IBAction)clickedNonPrescriptionSwitch:(id)sender {
     [sender toggleOn];
     [[NSUserDefaults standardUserDefaults] setBool:_switchNonPrescription.isOn forKey:kBOOLNonPrescriptionMedications];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)clickedVitaminsSwitch:(id)sender {
     [sender toggleOn];
     [[NSUserDefaults standardUserDefaults] setBool:_switchVitamins.isOn forKey:kBOOLPreNatalVitamins];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)checkForFinish {

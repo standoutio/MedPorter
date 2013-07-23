@@ -128,6 +128,7 @@
 - (IBAction)clickedSwitch:(id)sender {
     [sender toggleOn];
     [[NSUserDefaults standardUserDefaults] setBool:_switchPrednisone.isOn forKey:kBOOLPrednisone];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (float)expandedHeight {
@@ -144,6 +145,7 @@
     } else if (btn == _btnSkin) {
         [[NSUserDefaults standardUserDefaults] setBool:_btnSkin.isSelected forKey:kBOOLPrednisoneAppliedToSkin];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 #pragma mark - UITextFieldDelegate
@@ -151,6 +153,7 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     [[NSUserDefaults standardUserDefaults] setValue:_txtAge.text forKey:kPrednisoneStarted];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 

@@ -159,6 +159,7 @@
 - (IBAction)clickedSwitch:(id)sender {
     [sender toggleOn];
     [[NSUserDefaults standardUserDefaults] setBool:_switchPropanolol.isOn forKey:kBOOLPropanolol];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)clickedAmountButton:(id)sender {
@@ -170,6 +171,7 @@
     } else if (sender == _btnAmount40) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kBOOLPropanololAmount40];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)clickedMedsButton:(id)sender {
@@ -184,6 +186,7 @@
     } else if (sender == _btnTimes3) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kBOOLGiveMeds3];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (float)expandedHeight {
@@ -205,6 +208,7 @@
     } else if (textField == _txtTime3) {
         [[NSUserDefaults standardUserDefaults] setValue:_txtTime3.text forKey:kGiveMedsTime3];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 

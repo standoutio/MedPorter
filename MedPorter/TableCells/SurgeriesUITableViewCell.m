@@ -182,6 +182,7 @@
     } else if (sender == _switchStroke) {
         [[NSUserDefaults standardUserDefaults] setBool:_switchStroke.isOn forKey:kBOOLStroke];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (float)expandedHeight {
@@ -212,6 +213,7 @@
     } else if (btn == _btnStroke) {
         [[NSUserDefaults standardUserDefaults] setBool:_btnStroke.isSelected forKey:kBOOLStrokeUnknown];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 #pragma mark - UITextFieldDelegate
@@ -219,6 +221,7 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     [[NSUserDefaults standardUserDefaults] setValue:_txtComments.text forKey:kChildsMedicalHistoryComments];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 

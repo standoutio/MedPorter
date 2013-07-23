@@ -96,6 +96,7 @@
 
 - (void)toggleButtonDidChange:(ToggleButton *)btn {
     [[NSUserDefaults standardUserDefaults] setBool:_btnUnknown.isSelected forKey:kBOOLBirthHeightUnknown];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)enableToggleButtons:(BOOL)enabled {
@@ -115,6 +116,7 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     [[NSUserDefaults standardUserDefaults] setValue:_txtInches.text forKey:kBirthHeightInches];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 

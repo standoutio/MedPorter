@@ -10,10 +10,11 @@
 #import "Constants.h"
 #import "Catalyze.h"
 #import "LoginViewController.h"
+#import "NavigationViewController.h"
 
 @interface MedPorterAppDelegate()
 
-@property (strong, nonatomic) UINavigationController *controller;
+@property (strong, nonatomic) NavigationViewController *controller;
 @property (strong, nonatomic) LoginViewController *login;
 @property (strong, nonatomic) WelcomeViewController *welcome;
 @property (strong, nonatomic) ProfileViewController *profile;
@@ -37,24 +38,41 @@
     
     [Catalyze setApplicationKey:kCatalyzeAppKey];
     
-    if ([[CatalyzePerson currentPerson] isAuthenticated]) {
+    if (![[CatalyzePerson currentPerson] isAuthenticated]) {
         _profile = [[ProfileViewController alloc] initWithNibName:nil bundle:nil];
         _profile.delegate = self;
-        _controller = [[UINavigationController alloc] initWithRootViewController:_profile];
+        _controller = [[NavigationViewController alloc] initWithRootViewController:_profile];
     } else {
-        ////////////////////
-        _profile = [[ProfileViewController alloc] initWithNibName:nil bundle:nil];
-        _profile.delegate = self;
-        ///////////////////
-        _controller = [[UINavigationController alloc] initWithRootViewController:_profile];
+        _controller = [[NavigationViewController alloc] initWithRootViewController:_login];
     }
     
-    _controller.navigationBarHidden = YES;
+    [_controller.navigationBar addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:_controller action:@selector(toggleMenu)]];
     //_controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     self.window.rootViewController = _controller;
     [self.window makeKeyAndVisible];
     
+    CGSize size = CGSizeMake(self.window.frame.size.width, 44);
+    UIGraphicsBeginImageContext(size);
+    CGContextRef currentContext = UIGraphicsGetCurrentContext();
     
+    //Build a rect of appropriate size at origin 0,0
+    CGRect fillRect = CGRectMake(0,0,size.width,size.height);
+    
+    //Set the fill color
+    CGContextSetFillColorWithColor(currentContext, [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0f].CGColor);
+    
+    //Fill the color
+    CGContextFillRect(currentContext, fillRect);
+    
+    //Snap the picture and close the context
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    [[UINavigationBar appearance] setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          [UIColor blackColor], UITextAttributeTextColor,
+                                                          [UIFont fontWithName:@"Raleway" size:20.0f], UITextAttributeFont,
+                                                          [UIColor clearColor], UITextAttributeTextShadowColor,
+                                                          nil]];
     
     return YES;
 }
@@ -101,10 +119,11 @@
 - (void)showLoginViewController {
     _login = [[LoginViewController alloc] initWithNibName:nil bundle:nil];
     _login.delegate = self;
+    _login.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [UIView animateWithDuration:0.5 animations:^{
-        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-        [_controller pushViewController:_login animated:NO];
-        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
+        //[UIView setAnimationCurve:UIViewAnimationCurveLinear];
+        [_controller pushViewController:_login animated:YES];
+        //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
     }];
 }
 
@@ -118,10 +137,11 @@
 - (void)showWelcomeViewController {
     _welcome = [[WelcomeViewController alloc] initWithNibName:nil bundle:nil];
     _welcome.delegate = self;
+    _welcome.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [UIView animateWithDuration:0.5 animations:^{
-        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-        [_controller pushViewController:_welcome animated:NO];
-        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
+        //[UIView setAnimationCurve:UIViewAnimationCurveLinear];
+        [_controller pushViewController:_welcome animated:YES];
+        //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
     }];
 }
 
@@ -131,10 +151,11 @@
     [_controller popViewControllerAnimated:NO];
     _profile = [[ProfileViewController alloc] initWithNibName:nil bundle:nil];
     _profile.delegate = self;
+    _profile.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [UIView animateWithDuration:0.5 animations:^{
-        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-        [_controller pushViewController:_profile animated:NO];
-        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
+        //[UIView setAnimationCurve:UIViewAnimationCurveLinear];
+        [_controller pushViewController:_profile animated:YES];
+        //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
     }];
 }
 
@@ -142,10 +163,11 @@
     [_controller popViewControllerAnimated:NO];
     _medical = [[MedicalProfileViewController alloc] initWithNibName:nil bundle:nil];
     _medical.delegate = self;
+    _medical.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [UIView animateWithDuration:0.5 animations:^{
-        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-        [_controller pushViewController:_medical animated:NO];
-        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
+        //[UIView setAnimationCurve:UIViewAnimationCurveLinear];
+        [_controller pushViewController:_medical animated:YES];
+        //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
     }];
 }
 
@@ -153,10 +175,11 @@
     [_controller popViewControllerAnimated:NO];
     _meds = [[MedsProfileViewController alloc] initWithNibName:nil bundle:nil];
     _meds.delegate = self;
+    _meds.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [UIView animateWithDuration:0.5 animations:^{
-        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-        [_controller pushViewController:_meds animated:NO];
-        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
+        //[UIView setAnimationCurve:UIViewAnimationCurveLinear];
+        [_controller pushViewController:_meds animated:YES];
+        //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
     }];
 }
 
@@ -164,10 +187,11 @@
     [_controller popViewControllerAnimated:NO];
     _social = [[SocialProfileViewController alloc] initWithNibName:nil bundle:nil];
     _social.delegate = self;
+    _social.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [UIView animateWithDuration:0.5 animations:^{
-        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-        [_controller pushViewController:_social animated:NO];
-        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
+        //[UIView setAnimationCurve:UIViewAnimationCurveLinear];
+        [_controller pushViewController:_social animated:YES];
+        //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
     }];
 }
 
@@ -175,10 +199,11 @@
     [_controller popViewControllerAnimated:NO];
     _wellness = [[WellnessProfileViewController alloc] initWithNibName:nil bundle:nil];
     _wellness.delegate = self;
+    _wellness.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [UIView animateWithDuration:0.5 animations:^{
-        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-        [_controller pushViewController:_wellness animated:NO];
-        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
+        //[UIView setAnimationCurve:UIViewAnimationCurveLinear];
+        [_controller pushViewController:_wellness animated:YES];
+        //[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:_controller.view cache:NO];
     }];
 }
 

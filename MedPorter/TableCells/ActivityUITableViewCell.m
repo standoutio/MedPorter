@@ -97,6 +97,7 @@
 - (IBAction)clickedPHACESwitch:(id)sender {
     [sender toggleOn];
     [[NSUserDefaults standardUserDefaults] setBool:_switchPHACE.isOn forKey:kBOOLPHACE];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (float)expandedHeight {
@@ -105,6 +106,7 @@
 
 - (void)toggleButtonDidChange:(ToggleButton *)btn {
     [[NSUserDefaults standardUserDefaults] setBool:_btnUnknown.isSelected forKey:kBOOLPHACEUnknown];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)enableToggleButtons:(BOOL)enabled {

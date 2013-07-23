@@ -219,6 +219,7 @@
     } else if (sender == _switchPreNatalInfertility) {
         [[NSUserDefaults standardUserDefaults] setBool:_switchPreNatalInfertility.isOn forKey:kBOOLPreNatalInfertility];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (float)expandedHeight {
@@ -274,6 +275,7 @@
     [[NSUserDefaults standardUserDefaults] setValue:_txtMiscarriages.text forKey:kNumberOfSpontaneousMiscarriages];
     [[NSUserDefaults standardUserDefaults] setValue:_txtPregnancies.text forKey:kNumberOfPregnancies];
     [[NSUserDefaults standardUserDefaults] setValue:_txtOther.text forKey:kAssistedConceptionOther];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 
@@ -298,6 +300,7 @@
     } else if (sender == _btnUnknown) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kBOOLAssistedConceptionUnknown];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)clickedMultipleGestation:(id)sender {
@@ -312,6 +315,7 @@
     } else if (sender == _btnGreaterThanTriplet) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kBOOLMultipleGestationGreaterThanTriplet];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)clickedMultipleGestationType:(id)sender {
@@ -329,6 +333,7 @@
     } else if (sender == _btnInVitro) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kBOOLMultipleGestationTypeUnknown];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)checkForFinish {

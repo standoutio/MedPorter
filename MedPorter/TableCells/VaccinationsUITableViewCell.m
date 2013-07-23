@@ -159,6 +159,7 @@
     } else if (sender == _btnUnknown) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kBOOLMethodOfDeliveryUnknown];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (float)expandedHeight {

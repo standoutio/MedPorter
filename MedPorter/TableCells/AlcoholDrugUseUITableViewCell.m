@@ -90,6 +90,7 @@
         [[NSUserDefaults standardUserDefaults] setValue:_lblOtherDrugs.text forKey:kOtherTreatments];
     }
     [[NSUserDefaults standardUserDefaults] setBool:_switchOther.isOn forKey:kBOOLOtherTreatments];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (float)expandedHeight {
@@ -107,6 +108,7 @@
             [_lblOtherDrugs setText:[NSString stringWithFormat:@"%@, %@",_lblOtherDrugs.text, _txtDrugName.text]];
         }
         [[NSUserDefaults standardUserDefaults] setValue:_lblOtherDrugs.text forKey:kOtherTreatments];
+        [[NSUserDefaults standardUserDefaults] synchronize];
         [_txtDrugName setText:@""];
     }
     return YES;

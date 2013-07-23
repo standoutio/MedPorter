@@ -1,5 +1,7 @@
 #define kCatalyzeAppKey @"49BB224F-62EA-2CB8-C097-A032A420A1E5"
 
+#define kBOOLAllSectionsComplete @"all_sections_complete"
+
 /** Profile Mothers Info **/
 // Name
 #define kFirstName @"first_name"

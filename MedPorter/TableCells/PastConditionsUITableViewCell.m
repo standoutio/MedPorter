@@ -99,6 +99,7 @@
 
 - (void)toggleButtonDidChange:(ToggleButton *)btn {
     [[NSUserDefaults standardUserDefaults] setBool:_btnUnknown.isSelected forKey:kBOOLBirthWeightUnknown];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)enableToggleButtons:(BOOL)enabled {
@@ -125,6 +126,7 @@
     }
     [[NSUserDefaults standardUserDefaults] setValue:_txtPounds.text forKey:kBirthWeightPounds];
     [[NSUserDefaults standardUserDefaults] setValue:_txtOunces.text forKey:kBirthWeightOunces];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 

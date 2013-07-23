@@ -137,6 +137,7 @@
     [[NSUserDefaults standardUserDefaults] setValue:_txtDueDateMonth.text forKey:kDueDateMonth];
     [[NSUserDefaults standardUserDefaults] setValue:_txtDueDateDay.text forKey:kDueDateDay];
     [[NSUserDefaults standardUserDefaults] setValue:_txtDueDateYear.text forKey:kDueDateYear];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 

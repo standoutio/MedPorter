@@ -35,7 +35,7 @@
         [_jaLoadingLabel setFont:[UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:24.0f]];
         [_jaLoadingLabel setTextColor:[UIColor whiteColor]];
         [_jaLoadingLabel setText:@"Loading..."];
-        [_jaLoadingLabel setTextAlignment:UITextAlignmentCenter];
+        [_jaLoadingLabel setTextAlignment:NSTextAlignmentCenter];
         [_jaLoadingLabel setBackgroundColor:[UIColor clearColor]];
         [_jaLoadingLabel sizeToFit];
         CGRect r = _jaLoadingLabel.frame;

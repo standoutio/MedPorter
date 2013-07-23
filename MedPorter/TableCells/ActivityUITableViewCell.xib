@@ -113,6 +113,7 @@
 								<string key="NSFrame">{{49, 89}, {251, 21}}</string>
 								<reference key="NSSuperview" ref="1013248856"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -214,7 +215,7 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<object class="NSCustomResource" key="IBUIImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">droppedImage-7.tiff</string>
+									<string key="NSResourceName">green-check.tiff</string>
 								</object>
 							</object>
 						</array>
@@ -485,7 +486,7 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="droppedImage-7.tiff">{225, 225}</string>
+			<string key="green-check.tiff">{225, 225}</string>
 			<string key="yes@2x.png">{134, 53}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">2083</string>

@@ -63,6 +63,7 @@
 
 - (IBAction)chooseLevel1:(id)sender {
     [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:_lblDescription.text];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     [_btnLevel1 setBackgroundColor:_level1Color];
     [_btnLevel2 setBackgroundColor:[UIColor clearColor]];
     [_btnLevel3 setBackgroundColor:[UIColor clearColor]];
@@ -72,6 +73,7 @@
 
 - (IBAction)chooseLevel2:(id)sender {
     [[NSUserDefaults standardUserDefaults] setInteger:2 forKey:_lblDescription.text];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     [_btnLevel1 setBackgroundColor:[UIColor clearColor]];
     [_btnLevel2 setBackgroundColor:_level2Color];
     [_btnLevel3 setBackgroundColor:[UIColor clearColor]];
@@ -81,6 +83,7 @@
 
 - (IBAction)chooseLevel3:(id)sender {
     [[NSUserDefaults standardUserDefaults] setInteger:3 forKey:_lblDescription.text];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     [_btnLevel1 setBackgroundColor:[UIColor clearColor]];
     [_btnLevel2 setBackgroundColor:[UIColor clearColor]];
     [_btnLevel3 setBackgroundColor:_level3Color];
@@ -90,6 +93,7 @@
 
 - (IBAction)chooseLevel4:(id)sender {
     [[NSUserDefaults standardUserDefaults] setInteger:4 forKey:_lblDescription.text];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     [_btnLevel1 setBackgroundColor:[UIColor clearColor]];
     [_btnLevel2 setBackgroundColor:[UIColor clearColor]];
     [_btnLevel3 setBackgroundColor:[UIColor clearColor]];
@@ -99,6 +103,7 @@
 
 - (IBAction)chooseLevel5:(id)sender {
     [[NSUserDefaults standardUserDefaults] setInteger:5 forKey:_lblDescription.text];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     [_btnLevel1 setBackgroundColor:[UIColor clearColor]];
     [_btnLevel2 setBackgroundColor:[UIColor clearColor]];
     [_btnLevel3 setBackgroundColor:[UIColor clearColor]];

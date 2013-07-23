@@ -191,6 +191,7 @@
     } else if (sender == _switchVisualCompromise) {
         [[NSUserDefaults standardUserDefaults] setBool:_switchVisualCompromise.isOn forKey:kBOOLVisualCompromise];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (float)expandedHeight {
@@ -237,6 +238,7 @@
     } else if (btn == _btnVisualCompromiseUnknownUnknown) {
         [[NSUserDefaults standardUserDefaults] setBool:_btnVisualCompromiseUnknownUnknown.isSelected forKey:kBOOLVisualCompromiseUnknownUnknown];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 #pragma mark - UITextFieldDelegate
@@ -245,6 +247,7 @@
     [textField resignFirstResponder];
     [[NSUserDefaults standardUserDefaults] setValue:_txtOtherAirway.text forKey:kAirwayObstructionOther];
     [[NSUserDefaults standardUserDefaults] setValue:_txtOtherVisual.text forKey:kVisualCompromiseOther];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 
